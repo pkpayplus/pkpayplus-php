@@ -1,0 +1,9 @@
+<phpunit bootstrap="tests/bootstrap.php"
+         cacheDirectory=".phpunit.cache"
+         colors="true">
+    <testsuites>
+        <testsuite name="PkPayPlus SDK">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
