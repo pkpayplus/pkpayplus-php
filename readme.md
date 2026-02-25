@@ -43,7 +43,6 @@ The SDK reads configuration in this order:
 Create a `.env` file:
 
 ```env
-PKPAYPLUS_BASE_URL=https://api.pkpayplus.com
 PKPAYPLUS_SECRET_KEY=sk_live_xxxxxxxxx
 ```
 
@@ -274,14 +273,6 @@ Make sure:
 ```env
 PKPAYPLUS_SECRET_KEY=sk_test_xxx
 ```
-
----
-
-### Duplicate entry products_merchant_id_slug_unique
-
-You still have a unique index on `(merchant_id, slug)`.
-
-Fix by removing the `slug` column and its unique index via migration.
 
 ---
 
